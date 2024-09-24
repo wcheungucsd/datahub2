@@ -22,7 +22,7 @@ RUN apt-get -y install iputils-ping
 RUN apt update
 RUN cat /etc/os-release
 RUN apt -y upgrade
-RUN apt-get -y install btop
+#RUN apt-get -y install btop
 
 # 3) install packages using notebook user
 USER jovyan
@@ -33,3 +33,5 @@ RUN pip install --no-cache-dir networkx scipy
 
 # Override command to disable running jupyter notebook at launch
 # CMD ["/bin/bash"]
+
+RUN cat /etc/os-release
