@@ -21,9 +21,7 @@ RUN apt update
 RUN apt-get -y install iputils-ping
 
 RUN uname -a
-#RUN lsb_release -a
 RUN cat /etc/os-release
-RUN hostnamectl
 
 RUN apt -y update
 RUN apt -y upgrade
