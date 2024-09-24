@@ -16,6 +16,7 @@ USER root
 
 #RUN apt-get -y install htop
 RUN apt update
+RUN apt-get -y install iputils-ping
 RUN apt-get -y install htop ping
 
 # 3) install packages using notebook user
