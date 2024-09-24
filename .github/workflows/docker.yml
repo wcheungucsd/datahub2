@@ -16,6 +16,11 @@ jobs:
       packages: write
  
     steps:
+      - name: Check OS
+        run: |
+          uname -a
+          lsb_release -a
+          cat /etc/os-release
       - name: Check disk space
         run: |
           df -h .
