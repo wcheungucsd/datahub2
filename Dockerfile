@@ -5,7 +5,7 @@
 # See https://github.com/ucsd-ets/datahub-docker-stack/wiki/Stable-Tag 
 # for a list of the most current containers we maintain
 #ARG BASE_CONTAINER=ghcr.io/ucsd-ets/datascience-notebook:stable
-ARG BASE_CONTAINER=ghcr.io/ucsd-ets/scipy-ml:stable
+ARG BASE_CONTAINER=ghcr.io/ucsd-ets/scipy-ml-notebook:stable
 
 FROM $BASE_CONTAINER
 
