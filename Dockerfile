@@ -19,6 +19,8 @@ RUN apt-get -y install htop
 
 RUN apt update
 RUN apt-get -y install iputils-ping
+RUN apt update
+RUN apt upgrade
 RUN apt-get -y install btop
 
 # 3) install packages using notebook user
