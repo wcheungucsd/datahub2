@@ -19,8 +19,8 @@ jobs:
       - name: Check OS
         run: |
           uname -a
-          lsb_release -a
           cat /etc/os-release
+          hostnamectl
       - name: Check disk space
         run: |
           df -h .
