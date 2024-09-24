@@ -16,18 +16,12 @@ jobs:
       packages: write
  
     steps:
-      - name: Check disk space PRE
-        run: |
-           df -h .
       - name: Remove unnecessary files
         run: |
           sudo rm -rf /usr/share/dotnet
           sudo rm -rf /opt/ghc
           sudo rm -rf "/usr/local/share/boost"
           sudo rm -rf "$AGENT_TOOLSDIRECTORY
-      - name: Check disk space POST
-        run: |
-           df -h .
       - name: Checkout notebook
         uses: actions/checkout@v3
  
